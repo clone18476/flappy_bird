@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-image: url('assets/sky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:800px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+    background-image: url('assets/sky.png');
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+}
+#character{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 80px;
+    border-radius: 100%;
+    background-image: url('assets/bird.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
